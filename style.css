@@ -1,0 +1,214 @@
+html{
+    height: 100%;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.body-home{
+    background-image: url('images/background-01-port.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*=============== Home Page ===============*/
+/*======== Home Page logo ========*/
+#home-logo-img{
+    width: 450px;
+    display: block;
+    margin: auto;
+    margin-top: -50px;
+}
+
+
+/*======== Home Page Menus ========*/
+@keyframes animate {
+    0%   {margin: auto; font-size: 0px; width: 0; text-align: center; border: 0px solid #ffffff; display: block; margin-bottom: 10px;}
+    100% {margin: auto; font-size: 25px; width: 80%; text-align: center; border: 5px solid #ffffff; display: block; margin-bottom: 10px;}
+  }
+.home-menu{
+    margin-top: 20px;
+}
+.home-menu-item{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border: 5px solid #ffffff;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 80%;
+    animation-name: animate;
+    animation-duration: 2s;
+}
+
+/*=============== Meals Page ===============*/
+.body-meals{
+    background-image: url('images/background-header.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*======== Header Page header ========*/
+.header{
+    background-image: url('images/wood-bg.png');
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 50px;
+    display: block;
+}
+.header h3{
+    display: block;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 14px;
+    font-family: Monotype Corsiva;
+    font-size: 30px;
+}
+.header i{
+    float:left;
+    padding-top: 14px;
+    padding-left: 8px;
+}
+
+.meal-list{
+    margin-top: 15px;
+}
+
+/*======== Meal Page Menus ========*/
+@keyframes meal-animate {
+    0%   {margin: auto; font-size: 0px; width: 0; border: 0px solid #ffffff; display: block; margin-bottom: 10px;}
+    100% {margin: auto; width: 90%; border: 5px solid #ffffff; display: block; margin-bottom: 10px;}
+  }
+.meal-list-item{
+    text-decoration: none;
+    color: #ffffff;
+    border: 5px solid #ffffff;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 90%;
+    animation-name: meal-animate;
+    animation-duration: 2s;
+}
+
+.meal-list-item h3{
+    margin-top: 6px;
+    margin-left: 10px;
+}
+.meal-list-item p{
+    margin-top: -10px;
+    margin-left: 10px;
+}
+.meal-list-item i{
+    float: right;
+    margin-right: 10px;
+    margin-top: -20px;
+}
+
+/*=============== Single Meal Page ===============*/
+.single-meal-info img{
+    width: 100%;
+    height: 300px;
+}
+.single-meal-info h1{
+    text-align: center;
+    margin-top: -3px;
+    border: 5px solid black;
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.meal-details-info p{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.meal-details-ingredients{
+    margin-top: -12px;
+}
+.meal-details-ingredients h2{
+    margin-left: 10px;
+}
+.meal-details-ingredients input{
+    margin-left: 10px;
+}
+
+.meal-details-steps h2{
+    margin-left: 10px;
+}
+
+.meal-details-form{
+    padding: 10px;
+    background-color: #F2F3F4;
+    margin-bottom: 20px;
+}
+.meal-details-form label{
+    font-weight: bold;
+}
+.meal-details-form textarea{
+    width: 90%;
+    height: 70px;
+}
+.meal-details-form a{
+    display: block;
+    background-color: forestgreen;
+    width: 150px;
+    text-align: center;
+    height: 30px;
+    text-decoration: none;
+    padding-top: 12px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+
+/*=============== Message page ===============*/
+.message h1{
+    color: #80FF0D;
+    text-align: center;
+}
+.thank-message{
+  padding-top: 50px;
+  margin: auto;
+}
+.thank-message h2{
+     text-align: center;
+     font-size: 50px;
+}
+
+
+/*==================== Responsive ==============*/
+@media only screen and (min-width: 600px){
+    .single-meal-info{
+        width: 60%;
+        height: 100%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .single-meal-info{
+        width: 50%;
+        height: 100%;
+        margin: auto;
+    }
+    .single-meal-info img{
+       height: 500px;
+    }
+}
+
+
+
