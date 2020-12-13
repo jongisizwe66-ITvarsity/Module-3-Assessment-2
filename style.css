@@ -19,11 +19,14 @@ body{
 
 /*=============== Home Page ===============*/
 /*======== Home Page logo ========*/
-#home-logo-img{
+.body-home h1{
     width: 450px;
     display: block;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
+    font-family: Monotype Corsiva;
+    font-size: 80px;
+    text-align: center;
 }
 
 
